@@ -32,22 +32,22 @@ public class RandomSet {
 
             switch (figure) {
                 case 1:
-                    double side = (Math.random() * 10) + 1;
+                    double side = (int) (Math.random() * 10) + 1;
                     figures.add(new Square(side, colors.get(color)));
                     break;
                 case 2:
-                    double radius = (Math.random() * 10) + 1;
+                    double radius = (int) (Math.random() * 10) + 1;
                     figures.add(new Circle(radius, colors.get(color)));
                     break;
                 case 3:
-                    double sideA = (Math.random() * 10) + 1;
-                    double sideB = (Math.random() * 10) + 1;
+                    double sideA = (int) (Math.random() * 10) + 1;
+                    double sideB = (int) (Math.random() * 10) + 1;
                     figures.add(new RightTriangle(sideA, sideB, colors.get(color)));
                     break;
                 case 4:
-                    double sideAT = (Math.random() * 10) + 1;
-                    double sideBT = (Math.random() * 10) + 1;
-                    double h = (Math.random() * 10) + 1;
+                    double sideAT = (int) (Math.random() * 10) + 1;
+                    double sideBT = (int) (Math.random() * 10) + 1;
+                    double h = (int) (Math.random() * 10) + 1;
                     figures.add(new Trapeze(sideAT, sideBT, h, colors.get(color)));
                     break;
 

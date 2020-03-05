@@ -3,7 +3,6 @@ public class Main {
 
         Vision vision = new Vision();
         vision.setVisible(true);
-
-
+        
     }
 }

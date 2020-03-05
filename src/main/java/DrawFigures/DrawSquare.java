@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DrawSquare extends JPanel {
+    
     private Color color;
 
     public DrawSquare (Color color) {
@@ -16,18 +17,12 @@ public class DrawSquare extends JPanel {
         this.color = color;
     }
 
-
-
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-
-
         g2d.setColor(color);
         g2d.fillRect(75, 25, 200, 200);
     }
-
-
 }
 
 
